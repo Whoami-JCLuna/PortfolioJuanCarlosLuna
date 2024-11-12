@@ -1,5 +1,3 @@
-Inspirado en https://www.youtube.com/watch?v=V49fGLgM4WE&list=PL4FL-XepWXtsSXCijZOvvOI8DhB2951sC&index=5 
-
 Práctica 1 UT2 
 
 
@@ -21,3 +19,16 @@ Contexto:
 
 7. Publicar en github pages o en netlify.
 
+
+   - **Ejemplo 1: Menú de navegación**  
+   En el menú de navegación, se utiliza Flexbox para distribuir los elementos de manera equitativa y hacer que el menú sea flexible:
+
+   ```css
+   .nav {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       gap: 2rem;
+       padding: 2rem 0;
+   }
