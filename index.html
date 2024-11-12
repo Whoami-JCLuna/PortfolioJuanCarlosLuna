@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header section starts -->
+
+    <header>
+        <section class="header__main container">
+            <nav class="nav">
+
+                <a href="./" class="nav__logo-link"> J. Carlos<span> Luna </span></a>
+
+                <img id="menu-icon" src="./assets/menu-open.svg" alt="Menu Icon" class="menu-icon">
+
+                <input type="checkbox" class="nav__checkbox" id="menu-toggle">
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                    <img src="./assets/menu-open.svg" alt="Menu Icon">
+                </label>
+
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#timeLine" class="nav__link">Timeline</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+                    </li>
+
+                </ul>
+
+                <section class="controls-theme">
+                    <figure class="theme-icon">
+                        <!-- SVG del ícono de la luna para el modo claro -->
+                        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #FFD700; display: none;">
+                            <path
+                                d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z">
+                            </path>
+                        </svg>
+
+                        <!-- SVG del ícono del sol para el modo oscuro -->
+                        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #FFD700;">
+                            <path
+                                d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z">
+                            </path>
+                        </svg>
+                    </figure>
+                </section>
+
+
+                <label for="colorPicker" class="color__switcher-palette">
+                    <!-- SVG inline para el ícono de la paleta de colores -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M9.38 21.646A9.985 9.985 0 0 0 12 22l.141-.001a2.998 2.998 0 0 0 2.515-1.425c.542-.876.6-1.953.153-2.88l-.198-.415c-.453-.942-.097-1.796.388-2.281.485-.485 1.341-.841 2.28-.388h.001l.413.199a2.99 2.99 0 0 0 2.881-.153A2.997 2.997 0 0 0 22 12.141a9.926 9.926 0 0 0-.353-2.76c-1.038-3.827-4.353-6.754-8.246-7.285-3.149-.427-6.241.602-8.471 2.833S1.666 10.247 2.096 13.4c.53 3.894 3.458 7.208 7.284 8.246zM15.5 6a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-5-1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM9 15.506a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-2.5-6.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 6.5 9.006z">
+                        </path>
+                    </svg>
+                    <input type="color" id="colorPicker">
+                </label>
+
+
+
+            </nav>
+        </section>
+
+
+    </header>
+
+    <!-- Header section ends -->
+
+    <main>
+        <!-- Section home starts here -->
+        <section class="home container" id="home">
+            <article class="home-content">
+                <h1>¡Hola, soy <span>Juan Carlos</span>!</h1>
+                <h3><span>Técnico Informático</span> y estudiante de <span>Desarrollo de Aplicaciones Web</span> con experiencia en <span>Administración de Sistemas</span></h3>
+                <h3>Apasionado por <span>aprender nuevas tecnologías</span> y enfrentar <span>retos. </span>
+                 En constante aprendizaje para seguir mejorando en <span>desarrollo web</span>,<span>front-End</span> <span>backend</span> y <span>ciberseguridad</span>.</h3>
+
+
+                
+        
+                <section class="social-icons">
+                    <a href="https://github.com/Whoami-JCLuna" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/juan-carlosluna-samaniego-8463b72a2">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="mailto:jcluna.tech@gmail.com">
+                        <i class='bx bxl-gmail'></i>
+                    </a>
+                </section>
+        
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </article>
+        
+            <figure class="home-img">
+                <img src="./assets/profile.png" alt="Juan Carlos Luna">
+            </figure>
+        </section>
+        <!-- Section home ends here -->
+
+        <!-- Section about starts here -->
+
+        <section class="about container" id="about">
+            <figure class="about-img">
+                <img src="./assets/section1.png" alt="Profile Image">
+            </figure>
+        
+            <article class="about-content">
+                <h1 class="heading">About <span>Me</span></h1>
+                <h2>Main Skills</h2>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Instalación de software</li>
+                    <li>Resolución de problemas técnicos</li>
+                    <li>Comunicación efectiva</li>
+                </ul>
+        
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Lenguajes: JavaScript, HTML, CSS, JAVA</li>
+                    <li>Sistemas operativos: Linux, Windows</li>
+                    <li>Herramientas de desarrollo: Git, Eclipse, VsCode, SQLDeveloper</li>
+                    <li>Base de datos: SQL, PL/SQL</li>
+                </ul>
+            </article>
+        </section>
+        <!-- Section about ends here -->
+
+        <!-- Section services starts here -->
+        <section class="services container" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bxs-devices'></i>
+                    <h3>Web Development</h3>
+                    <p>Creación de aplicaciones web interactivas y dinámicas utilizando tecnologías modernas como
+                        JavaScript, HTML y CSS.</p>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bx-code'></i>
+                    <h3>Backend Development</h3>
+                    <p>Desarrollo de servidores y bases de datos, implementando soluciones robustas y seguras con
+                        tecnologías como Node.js y SQL.</p>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bx-code-curly'></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Implementación de estrategias de ciberseguridad, protección de redes y gestión de riesgos para
+                        garantizar la integridad de los sistemas.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section services ends here -->
+
+        <!-- section education and experience starts here -->
+        <h2 class="heading"><span>Experiencia</span></h2>
+        <section class="timeline container" id="timeLine">
+
+            <div class="container">
+                <ul class="timeline">
+                    <li>
+                        <h3>2023</h3>
+                        <h3>Técnico en New Media Professional Services</h3>
+                        <p>Instalación y configuración de servidores Zenworks, OES y SLES, así como servidor Advance Authentication. Mantenimiento y parcheo de servidores OES.</p>
+                    </li>
+                    <li>
+                        <h3>2011-2019</h3>
+                        <h3>Freelance - Modelado 3D y Diseño Gráfico</h3>
+                        <p>Trabajo en proyectos de modelado 3D y diseño gráfico.</p>
+                    </li>
+                    <li>
+                        <h3>2012-2013</h3>
+                        <h3>Comercial en Fortress Marketing</h3>
+                        <p>Comercial de ventas en productos de marketing digital, con enfoque en la captación de clientes mediante venta directa.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section education and experience starts here -->
+        <h2 class="heading"><span>Educación</span></h2>
+        <section class="timeline container" id="timeLine">
+            <div class="container">
+                <ul class="timeline">
+                    <li>
+                        <h3>2023</h3>
+                        <p>Ciclo Formativo de Grado Superior, Desarrollo de aplicaciones web. IES Azarquiel.</p>
+                    </li>
+                    <li>
+                        <h3>2021 - 2023</h3>
+                        <p>Ciclo Formativo de Grado Medio, Administración de sistemas informáticos. IES Azarquiel.</p>
+                    </li>
+                    <li>
+                        <h3>2022</h3>
+                        <p>Certificación: <strong>Campus BBVA - Cybersecurity for Managers</strong></p>
+                    </li>
+                    <li>
+                        <h3>2022</h3>
+                        <p>Certificación: <strong>Unified Endpoint Management Presales Engineer</strong></p>
+                    </li>
+                    <li>
+                        <h3>2022</h3>
+                        <p>Certificación: <strong>Hacking de Redes Inalámbricas (WiFi)</strong></p>
+                    </li>
+                    <li>
+                        <h3>2022</h3>
+                        <p>Certificación: <strong>AATH01 - Advanced Authentication Essentials</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contacta <span>conmigo</span></h2>
+
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="email" placeholder="Correo electrónico">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="number" placeholder="Teléfono de contacto">
+                        <input type="text" placeholder="Asunto">
+                    </div>
+
+                </div>
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <section class="social-icons">
+
+            <a href="" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+
+            <!-- <a href="https://www.instagram.com/albafroggy/" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a> -->
+
+            <a href="https://poneralgo" target="_blank">
+                <i class='bx bxl-twitter'></i>
+            </a>
+
+        </section>
+        <ul class="list">
+            <!-- <li><a href="#">FAQ</a></li> -->
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#contact">Contactar</a></li>
+        </ul>
+
+        <p class="copyright">© Juan Carlos Luna | All Rights Reserved</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
